@@ -22,12 +22,12 @@ const Index = () => {
                         <li className="text-secondary text-5xl md:text-primary font-bold md:text-lg">Delivery</li>
 
                     </ul>
-                    <div className=" bg-secondary p-2 z-10 block flex justify-center align-center pt-6  absolule md:hidden ">
+                    <div className=" bg-secondary p-2 z-10  flex justify-center align-center pt-6  absolule md:hidden ">
                         <img src="/images/burger.png" alt="" className="inline w-8 h-8   " />
                     </div>
                     {/* Search Input  */}
 
-                    <div className="hidden md:block flex items-center justify-center  relative md:w-76 xl:w-96   ">
+                    <div className="hidden md:flex items-center justify-center  relative md:w-76 xl:w-96   ">
                         <input type="text" className=" p-3 pl-5 font- rounded-3xl  w-full bg-primary text-white font-black " placeholder="search" />
                         <img src="/images/search.png" alt="" className="h-6 w-6 absolute right-4 rotate-90 top-2.5" />
                     </div>
