@@ -9,11 +9,13 @@ const Index = () => {
             {/*  Header  */}
             <header className=" w-full relative md:pt-6 ">
                 <nav className="flex justify-between  md:justify-around" >
-                    <div className="flex items-center center">
-                        <img src="/images/logo.png" alt="" className="w-8 h-8" />
-                        <h1 className="text-white text-3sm md:text-2xl font-black "> milky
-                            <span className="text-primary font-normal   "> way</span></h1>
-                    </div>
+                    <a href="/">
+                        <div className="flex items-center center">
+                            <img src="/images/logo.png" alt="" className="w-8 h-8" />
+                            <h1 className="text-white text-3sm md:text-2xl font-black "> milky
+                                <span className="text-primary font-normal   "> way</span></h1>
+                        </div>
+                    </a>
                     <ul className=" hidden absolute h-screen w-full left-0 bg-primary 
                        md:flex flex-col  pl-16 pt-36  justify-start md:flex-row md:justify-around md:items-center md:w-1/4 
                         md:bg-transparent md:relative md:h-auto md:space-y-0 space-y-12 md:p-0   ">
@@ -32,12 +34,12 @@ const Index = () => {
                     {/* Search Input  */}
 
                     <div className="hidden md:flex items-center justify-center  relative md:w-76 lg:w-96 md:w-64 ">
-                        <input type="text" className="  p-3 font- rounded-3xl  lg:w-full   text-primary font-semibold md:p-2 md:text-sm" />
+                        <input type="text" className="  p-3 font- rounded-3xl  lg:w-full outline-none  text-primary font-semibold md:p-2 md:text-sm" />
                         <img src="/images/search.png" alt="" className="h-6 w-6  lg:right-4 md:right-6  absolute rotate-90 hover:cursor-pointer" />
                     </div>
                     {/* User Profile  */}
-                    <div className="hidden md:flex items-center justify-center  hover:cursor-pointer hover:border-b-primary hover:border-b-2 ">
-                        <img src="/images/userIcon.png" alt="" className="w-6 h-6" />
+                    <div className="hidden md:flex items-center justify-center bg-white  w-10 rounded-full  hover:cursor-pointer">
+                        <img src="/images/userIcon.png" alt="" className="w-4 h-4" />
                     </div>
 
                 </nav>
@@ -97,12 +99,12 @@ const Index = () => {
                 </div>
 
                 {/* Image  */}
-                <div className=" md:w-1/2 lg:w-1/3">
-                    <img src="/images/ice1.png" alt="" className="lg:w-full" />
+                <div className="flex bg-red-300 rounded-full items-center justify-center ">
+                    <img src="/images/2.png" alt="" className=" w-2/3 top-0 left-0 " />
                 </div>
 
                 {/* Description  */}
-                <div className="lg:w-1/3">
+                <div className="lg:w-1/3 lg:px-6 md:px-8">
                     <h1 className="text-primary text-4xl lg:text-5xl  mt-4 font-black  font-primary text-left md:text-4xl md:mt-0  ">Minty Chocolate Dream
                     </h1>
                     <p className=" text-primary text-md text-left pt-4 pb-4 ml-3 md:text-xl font-regular md:ml-0 md:w-96 ">
