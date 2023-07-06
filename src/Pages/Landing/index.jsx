@@ -8,7 +8,7 @@ const Index = () => {
 
             {/*  Header  */}
             <header className=" w-full relative md:pt-6 ">
-                <nav className="flex justify-between  md:justify-around" >
+                <nav className="flex justify-between items-center  md:justify-around" >
                     <a href="/">
                         <div className="flex items-center center">
                             <img src="/images/logo.png" alt="" className="w-8 h-8" />
@@ -16,16 +16,15 @@ const Index = () => {
                                 <span className="text-primary font-normal   "> way</span></h1>
                         </div>
                     </a>
-                    <ul className=" hidden absolute h-screen w-full left-0 bg-primary 
-                       md:flex flex-col  pl-16 pt-36  justify-start md:flex-row md:justify-around md:items-center md:w-1/4 
-                        md:bg-transparent md:relative md:h-auto md:space-y-0 space-y-12 md:p-0   ">
+                    <ul className="hidden top-0 absolute h-screen w-full  bg-primary md:flex flex-col  justify-start gap-y-4 items-start
+                      md:flex-row md:justify-around md:w-1/4 md:bg-transparent md:relative md:h-auto md:gap-0 ">
                         <li className="text-secondary text-5xl md:text-primary font-bold 
-                         hover:text-secondary hover:cursor-pointer  transition-colors duration-200 ease-in md:text-sm lg:text-lg">Reserve</li>
+                         hover:text-background md:hover:text-secondary hover:cursor-pointer  transition-colors duration-200 ease-in md:text-sm lg:text-lg ">Reserve</li>
                         <li className="text-secondary text-5xl md:text-primary font-bold lg:text-lg md:text-sm
-                         hover:text-secondary hover:cursor-pointer  transition-colors duration-200 ease-in">Trending</li>
+                         hover:text-background md:hover:text-secondary hover:cursor-pointer  transition-colors duration-200 ease-in">Trending</li>
 
                         <li className="text-secondary text-5xl md:text-primary font-bold lg:text-lg md:text-sm
-                         hover:text-secondary  hover:cursor-pointer transition-colors duration-200 ease-in">Delivery</li>
+                         hover:text-background  md:hover:text-secondary  hover:cursor-pointer transition-colors duration-200 ease-in">Delivery</li>
 
                     </ul>
                     <div className="  p-2 z-10  flex justify-center align-center pt-6  absolule md:hidden ">
@@ -38,7 +37,7 @@ const Index = () => {
                         <img src="/images/search.png" alt="" className="h-6 w-6  lg:right-4 md:right-6  absolute rotate-90 hover:cursor-pointer" />
                     </div>
                     {/* User Profile  */}
-                    <div className="hidden md:flex items-center justify-center bg-white  w-10 rounded-full  hover:cursor-pointer">
+                    <div className="hidden md:flex items-center justify-center bg-white  w-10 rounded-full  hover:cursor-pointer  ">
                         <img src="/images/userIcon.png" alt="" className="w-4 h-4" />
                     </div>
 
@@ -48,7 +47,7 @@ const Index = () => {
             {/* Hero Section  */}
             <div className="  h-full w-full flex flex-col items-center justify-center  md:flex-row md:justify-around  ">
                 {/* Icons  */}
-                <div className=" hidden lg:flex flex-col h-4/6  items-start justify-around ">
+                <div className=" hidden lg:flex flex-col h-4/6 pl-10  items-start justify-around ">
 
                     <div className="flex items-center  " >
 
@@ -99,8 +98,8 @@ const Index = () => {
                 </div>
 
                 {/* Image  */}
-                <div className="flex bg-red-300 rounded-full items-center justify-center ">
-                    <img src="/images/2.png" alt="" className=" w-2/3 top-0 left-0 " />
+                <div className="w-auto h-auto flex bg-red-300 rounded-full items-center justify-center ">
+                    <img src="/images/2.png" alt="" className=" w-2/3 p-4 md:w-2/3 top-0 left-0 rounded-full " />
                 </div>
 
                 {/* Description  */}

@@ -1,12 +1,13 @@
 
 import Landing from '../src/Pages/Landing'
-import Product from '../src/Components/Product/Index'
+import Shakes from '../src/Components/Shakes/Index'
+
 function App() {
 
   return (
-    <div className='h-screen '>
+    <div className='h-screen'>
       <Landing />
-      <Product />
+      <Shakes />
     </div>
   )
 }
