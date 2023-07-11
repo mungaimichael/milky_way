@@ -2,7 +2,7 @@ import { IndProduct } from "../Creams/Index"
 
 const Index = () => {
     return (
-        <div className="  h-full bg-background font-primary" >
+        <div className="  h-screen absolute font-primary  md:h-auto md:relative " >
             <div className="flex flex-col justify-evenly items-center h-full md:flex-row md:items-start w-full  " >
                 {/* Single Item Container  */}
                 <IndProduct

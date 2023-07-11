@@ -2,7 +2,7 @@
 
 const Index = () => {
     return (
-        <div className="w-full h-full bg-red-900 font-primary" >
+        <div className=" absolute top-[200vh] w-full h-screen font-primary md:h-auto md:relative md:top-0 " >
             <div className="rounded-br-full rounded-tl-full w-full h-full  md:rounded-none md:h-5/6 ">
                 <div className="flex flex-col justify-evenly items-center h-full md:flex-row md:items-start w-full  " >
                     {/* Single Item Container  */}
@@ -36,16 +36,16 @@ export default Index
 // eslint-disable-next-line react/prop-types
 export const IndProduct = ({ heading, img, description }) => {
     return (
-        <div className=" bg-background font-primary" >
+        <div className=" font-primary " >
             <div className="flex flex-col justify-around items-center h-full md:flex-row md:items-start w-full  " >
                 {/* Single Item Container  */}
-                <div className="flex flex-col gap-y-1 items-start">
-                    <div className="flex flex-col  self-start md:self-center  justify-center items-center w-28 h-28 md:w-60 md:h-60 rounded-full bg-red-100 relative">
-                        <img src={`/images/${img}.png`} alt="" className="w-12 md:w-auto md:h-60 " />
+                <div className="flex flex-col items-start">
+                    <div className="flex flex-col  self-start md:self-center  justify-center items-center w-20 h-20 md:w-60 md:h-60 rounded-full bg-red-100 relative">
+                        <img src={`/images/${img}.png`} alt="" className="w-8 md:w-auto md:h-60 md:p-5  " />
                     </div>
                     <div className="w-full flex flex-col text-primary items-start px-2">
                         <h1 className="text-sm font-black  text-center md:text-xl lg:text-3xl lg:pl-3">{heading}</h1>
-                        <p className=" text-xs font-regular   md:w-full lg:p-3 md:text-2xl  " >
+                        <p className=" text-xs font-regular   md:w-full lg:p-3 md:text-xl md:font-light  " >
                             {description}
                         </p>
                     </div>
