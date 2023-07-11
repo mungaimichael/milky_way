@@ -2,10 +2,9 @@
 
 const Index = () => {
     return (
-        <div className=" absolute top-[200vh] w-full h-screen font-primary md:h-auto md:relative md:top-0 " >
-            <div className="rounded-br-full rounded-tl-full w-full h-full  md:rounded-none md:h-5/6 ">
-                <div className="flex flex-col justify-evenly items-center h-full md:flex-row md:items-start w-full  " >
-                    {/* Single Item Container  */}
+        <div className=" absolute bg-background top-[200vh] w-full h-screen font-primary md:h-auto md:relative md:top-0 " >
+            <div className="w-full h-full">
+                <div className="flex flex-col justify-around items-center h-full md:flex-row md:items-start w-full  " >
                     <IndProduct
 
                         heading={"Banana Chocolate"}
@@ -45,7 +44,7 @@ export const IndProduct = ({ heading, img, description }) => {
                     </div>
                     <div className="w-full flex flex-col text-primary items-start px-2">
                         <h1 className="text-sm font-black  text-center md:text-xl lg:text-3xl lg:pl-3">{heading}</h1>
-                        <p className=" text-xs font-regular   md:w-full lg:p-3 md:text-xl md:font-light  " >
+                        <p className=" text-xs font-regular md:w-5/6 align-center lg:p-3 md:text-[18px] md:font-light  " >
                             {description}
                         </p>
                     </div>
