@@ -1,10 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { useState } from 'react'
+import Reservation from '../../Components/Reservation'
 const Index = () => {
+
+    const [display, setDisplay] = useState(false)
     return (
         // Hero Section
 
         <div className=' font-primary  w-100 h-screen flex items-center justify-start flex-col bg-background ' >
+
+            {/* Reservation  */}
+
+            <Reservation display={display} />
 
             {/*  Header  */}
             <header className=" w-full relative md:pt-6 ">
@@ -18,7 +26,8 @@ const Index = () => {
                     </a>
                     <ul className="hidden top-0 absolute h-screen w-full  bg-primary md:flex flex-col  justify-start gap-y-4 items-start
                       md:flex-row md:justify-around md:w-1/4 md:bg-transparent md:relative md:h-auto md:gap-0 ">
-                        <li className="text-secondary text-5xl md:text-primary font-bold 
+                        <li onClick={() => setDisplay(prev => !prev)}
+                            className="text-secondary text-5xl md:text-primary font-bold 
                          hover:text-background md:hover:text-secondary hover:cursor-pointer  transition-colors duration-200 ease-in md:text-sm lg:text-lg ">Reserve</li>
                         <li className="text-secondary text-5xl md:text-primary font-bold lg:text-lg md:text-sm
                          hover:text-background md:hover:text-secondary hover:cursor-pointer  transition-colors duration-200 ease-in">Trending</li>

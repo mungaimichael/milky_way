@@ -1,6 +1,5 @@
 
 import Landing from './Pages/Landing'
-// import Shakes from '../src/Components/Shakes/Index'
 import Product from './Components/Product/Index'
 
 
